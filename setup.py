@@ -4,10 +4,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='pset1nik',
-      version='0.1.0',
+      version='0.1.4',
       description='pset1 test',
       py_modules=['pset1'],
       package_dir={'': 'src'},
+      packages=['pset1'],
       long_description=long_description,
       long_description_content_type="text/markdown",
       classifiers=[

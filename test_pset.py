@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `pset_1` package."""
+"""Tests for `pset1` package."""
 
 import os
 from tempfile import TemporaryDirectory
 from unittest import TestCase
 from environs import Env
-from src.pset_1.hash_str import hash_str, get_user_id, get_csci_pepper, get_csci_salt
-from src.pset_1.io import atomic_write
-from src.pset_1.canvas import get_assignment_id, get_quiz_id, get_course_id, get_excel_user_ids, get_answers, get_questions
-from src.pset_1.__main__ import main
+from pset1.hash_str import hash_str, get_user_id, get_csci_pepper, get_csci_salt
+from pset1.io import atomic_write
+from pset1.canvas import get_assignment_id, get_quiz_id, get_course_id, get_excel_user_ids, get_answers, get_questions
+from pset1.__main__ import main
 
 env = Env()
 env.read_env()

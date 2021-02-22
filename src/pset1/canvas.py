@@ -3,7 +3,7 @@ from canvasapi import Canvas
 from contextlib import contextmanager
 from canvasapi.quiz import QuizSubmissionQuestion, QuizSubmission
 from environs import Env
-from src.pset_1.hash_str import get_user_id
+from pset1.hash_str import get_user_id
 import pandas as pd
 
 env = Env()

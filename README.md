@@ -319,7 +319,7 @@ trying to download the data.
 
 ### Canvas helpers
 
-Note the module [pset_1/canvas.py](src/pset_1/canvas.py).  As you complete this
+Note the module [pset_1/canvas.py](src/pset1/canvas.py).  As you complete this
 problem set, think about anything you do which is a generalized utility for
 Canvas (eg, you might want to reuse in your next psets).  Write those functions
 in this module for now.
@@ -356,7 +356,7 @@ it into your modules.
 A `salt` is a prefix that may be added to increase the randomness or otherwise
 change the outcome.  It may be a `str` or `bytes` string, or empty.
 
-Implement it in [hash_str.py](src/pset_1/hash_str.py), where the return value is the
+Implement it in [hash_str.py](src/pset1/hash_str.py), where the return value is the
 `.digest()` of the hash, as a `bytes` array:
 
 ```python
@@ -425,7 +425,7 @@ Bug](https://www.arashrouhani.com/luigi-budapest-bi-oct-2015/#/21)
 
 #### Implement an atomic write
 
-Start with the following in [io.py](src/pset_1/io.py):
+Start with the following in [io.py](src/pset1/io.py):
 
 ```python
 @contextmanager
@@ -473,7 +473,7 @@ function or otherwise.***
 ### Parquet
 
 Excel is a very poor file format compared to modern column stores.
-In [__main__.py](src/pset_1/__main__.py) use
+In [__main__.py](src/pset1/__main__.py) use
 [Parquet via Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#parquet)
 to transform the provided excel file into a better format.
 
@@ -488,12 +488,12 @@ Ensure you use your atomic write (consider using `as_file=False` with
 `.to_parquet`).  If the file exists already, you do not need to write it out
 again.
 
-In [__main__.py](src/pset_1/__main__.py) read back ***just the hashed id column***
+In [__main__.py](src/pset1/__main__.py) read back ***just the hashed id column***
 and print it. ***DO NOT*** read the entire data set!
 
 ### Your main script and submission context manager
 
-Implement top level execution in [pset_1/\__main__.py](src/pset_1/__main__.py) to
+Implement top level execution in [pset_1/\__main__.py](src/pset1/__main__.py) to
 show your work, answer the submission quiz, and submit the assignment to Canvas
 via CI/CD.  It can be invoked with `python -m pset_1`.
 

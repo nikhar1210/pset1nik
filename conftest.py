@@ -2,7 +2,7 @@ import os
 from contextlib import contextmanager
 from typing import ContextManager, Union
 import tempfile
-from src.pset_1.hash_str import get_user_id
+from pset1.hash_str import get_user_id
 
 
 @contextmanager
